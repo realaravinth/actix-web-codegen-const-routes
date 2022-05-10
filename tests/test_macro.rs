@@ -10,7 +10,9 @@ use actix_web::{
     },
     web, App, Error, HttpResponse, Responder,
 };
-use actix_web_codegen_const_routes::{connect, delete, get, head, options, patch, post, put, route, trace};
+use actix_web_codegen_const_routes::{
+    connect, delete, get, head, options, patch, post, put, route, trace,
+};
 use futures_core::future::LocalBoxFuture;
 
 // Make sure that we can name function as 'config'
