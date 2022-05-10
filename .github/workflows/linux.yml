@@ -51,18 +51,6 @@ jobs:
           command: test
           args: --all --all-features --no-fail-fast
 
-      - name: Generate coverage file
-        if: matrix.version == 'stable' && (github.ref == 'refs/heads/master' || github.event_name == 'pull_request')
-        uses: actions-rs/tarpaulin@v0.1
-        with:
-          args: '-t 1200'
-
-      - name: Upload to Codecov
-        if: matrix.version == 'stable' && (github.ref == 'refs/heads/master' || github.event_name == 'pull_request')
-        uses: codecov/codecov-action@v2
-        with:
-          file: cobertura.xml
-
       - name: generate documentation
         if: matrix.version == 'stable' && (github.repository == 'realaravinth/actix-web-codegen-const-routes')
         uses: actions-rs/cargo@v1
