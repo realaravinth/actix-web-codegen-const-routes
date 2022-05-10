@@ -1,4 +1,4 @@
-name: CI (Linux)
+name: Coverage (Linux)
 
 on:
   pull_request:
