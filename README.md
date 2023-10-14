@@ -6,16 +6,12 @@
 	<strong>Routing and runtime macros for Actix Web with support for const routes. Fork of actix-web-codegen</strong>
 </p>
 
-[![Documentation](https://img.shields.io/badge/docs-master-blue)](https://realaravinth.github.io/actix-web-codegen-const-routes/cache_buster/index.html)
-![CI (Linux)](<https://github.com/realaravinth/actix-web-codegen-const-routes/workflows/CI%20(Linux)/badge.svg>)
-[![dependency status](https://deps.rs/repo/github/realaravinth/actix-web-codegen-const-routes/status.svg)](https://deps.rs/repo/github/realaravinth/actix-web-codegen-const-routes)
-[![codecov](https://codecov.io/gh/realaravinth/actix-web-codegen-const-routes/branch/master/graph/badge.svg)](https://codecov.io/gh/realaravinth/actix-web-codegen-const-routes)
 
 </div>
 
 ## Documentation & Resources
 
--   [API Documentation](https://docs.rs/actix-web-codegen) TODO: replace with fork's documentation link
+-   [API Documentation](https://docs.rs/actix-web-codegen-const-routes) TODO: replace with fork's documentation link
 -   Minimum Supported Rust Version (MSRV): 1.54
 
 ## Compile Testing

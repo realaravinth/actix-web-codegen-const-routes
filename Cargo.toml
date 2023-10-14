@@ -2,7 +2,7 @@
 name = "actix-web-codegen-const-routes"
 version = "0.1.0"
 description = "Routing and runtime macros for Actix Web with support for const routes"
-repository = "https://github.com/actix/actix-web.git"
+repository = "https://git.batsense.net/realaravinth/actix-web-codegen-const-routes"
 authors = [
     "Nikolay Kim <fafhrd91@gmail.com>",
     "Rob Ede <robjtede@icloud.com>",
