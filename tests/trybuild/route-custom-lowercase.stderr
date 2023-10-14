@@ -1,15 +1,13 @@
-error: The #[route(..)] macro requires at least one `method` attribute
- --> tests/trybuild/route-missing-method-fail.rs:3:1
+error: HTTP method must be uppercase: `hello`
+ --> tests/trybuild/route-custom-lowercase.rs:5:23
   |
-3 | #[route("/")]
-  | ^^^^^^^^^^^^^
-  |
-  = note: this error originates in the attribute macro `route` (in Nightly builds, run with -Z macro-backtrace for more info)
+5 | #[route("/", method = "hello")]
+  |                       ^^^^^^^
 
 error[E0277]: the trait bound `fn() -> impl std::future::Future<Output = String> {index}: HttpServiceFactory` is not satisfied
-  --> tests/trybuild/route-missing-method-fail.rs:12:55
+  --> tests/trybuild/route-custom-lowercase.rs:14:55
    |
-12 |     let srv = actix_test::start(|| App::new().service(index));
+14 |     let srv = actix_test::start(|| App::new().service(index));
    |                                               ------- ^^^^^ the trait `HttpServiceFactory` is not implemented for fn item `fn() -> impl std::future::Future<Output = String> {index}`
    |                                               |
    |                                               required by a bound introduced by this call
